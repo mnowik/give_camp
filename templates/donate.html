@@ -1,0 +1,14 @@
+Hillary's Campaign donation
+
+{{error}}
+
+<form action="{{ url_for('donate') }}" method="post">
+  <input type="hidden" name="campaign_id" value=1 ><br>
+  Amount:<br>
+  <input type="text" name="amount" placeholder="Enter donation amount">
+  <input type="submit">
+</form>
+
+{% if camp_curr %}
+  Campaign reached {{camp_curr}}
+{% endif %}
